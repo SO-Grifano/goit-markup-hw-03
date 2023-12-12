@@ -1,3 +1,21 @@
+/* Reset styles */
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -31,12 +49,28 @@ h1 {
   letter-spacing: 1.12px;
   color: white;
 }
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Header & Navbar */
 .header {
   background-color: #fff;
+  padding: 24px 0;
 }
-
+.container.is-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-nav {
+  display: flex;
+  gap: 76px;
+}
 .main-logo {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -46,13 +80,10 @@ h1 {
   text-transform: uppercase;
   color: #4d5ae5;
 }
-
-/* ? Який підхід вважатиметься правельним? */
-/* ? A (мені подобається цей, адже в такому разі ми точно знаємо що лого містить span) */
-/* .main-logo span {
-  color: #2e2f42;
-} */
-/* ? B */
+.navbar-menu {
+  display: flex;
+  gap: 40px;
+}
 .main-logo-span {
   color: #2e2f42;
 }
@@ -72,6 +103,10 @@ address {
 address a:hover,
 address a:focus {
   color: #404bbf;
+}
+.navbar-contact ul {
+  display: flex;
+  gap: 40px;
 }
 .navbar-contact-link {
   line-height: 1.5;
