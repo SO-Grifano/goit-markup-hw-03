@@ -61,6 +61,7 @@ h1 {
 .header {
   background-color: #fff;
   padding: 24px 0;
+  border-bottom: 1px solid #e7e9fc;
 }
 .container.is-flex {
   display: flex;
@@ -87,7 +88,6 @@ h1 {
 .main-logo-span {
   color: #2e2f42;
 }
-
 .navbar-link {
   color: #2e2f42;
   font-size: 16px;
@@ -112,7 +112,9 @@ address a:focus {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
+.section {
+  padding: 120px 0;
+}
 /* Section - Hero */
 .section-hero {
   background-color: #2e2f42;
