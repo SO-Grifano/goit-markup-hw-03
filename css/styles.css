@@ -49,6 +49,9 @@ h1 {
   letter-spacing: 1.12px;
   color: white;
 }
+img {
+  display: block;
+}
 .container {
   max-width: 1158px;
   padding-left: 15px;
@@ -83,7 +86,11 @@ h1 {
 }
 .navbar-menu {
   display: flex;
+  align-items: center;
   gap: 40px;
+}
+.navbar-nav .main-logo {
+  margin-right: 76px;
 }
 .main-logo-span {
   color: #2e2f42;
@@ -94,6 +101,7 @@ h1 {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 address {
   font-style: normal;
