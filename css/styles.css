@@ -16,6 +16,18 @@ p {
 }
 
 /* Global Styles */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  bottom: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -74,6 +86,7 @@ img {
 .navbar-nav {
   display: flex;
   gap: 76px;
+  align-items: center;
 }
 .main-logo {
   font-family: "Raleway", sans-serif;
@@ -86,7 +99,6 @@ img {
 }
 .navbar-menu {
   display: flex;
-  align-items: center;
   gap: 40px;
 }
 .navbar-nav .main-logo {
@@ -226,7 +238,8 @@ button:focus {
 }
 .section-portfolio .portfolio_flex-list {
   display: flex;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
   flex-wrap: wrap;
 }
 .section-portfolio .portfolio_flex-element {
